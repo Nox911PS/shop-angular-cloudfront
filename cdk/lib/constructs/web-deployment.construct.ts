@@ -2,7 +2,7 @@ import * as path from 'path';
 import { Construct } from 'constructs';
 import {aws_cloudfront, aws_cloudfront_origins, aws_s3, aws_s3_deployment, CfnOutput, RemovalPolicy} from "aws-cdk-lib";
 
-const webAppPath = path.resolve(__dirname, '../../../dist/app/browser');
+const webAppPath = path.resolve(__dirname, '../../../front/dist/app/browser');
 
 export class WebDeploymentConstruct extends Construct {
   constructor(scope: Construct, id: string) {
@@ -11,7 +11,8 @@ export class WebDeploymentConstruct extends Construct {
     const hostingBucket = new aws_s3.Bucket(this, 'FrontAppBucket', {
       blockPublicAccess: aws_s3.BlockPublicAccess.BLOCK_ALL,
       removalPolicy: RemovalPolicy.DESTROY,
-      autoDeleteObjects: true
+      autoDeleteObjects: true,
+      websiteIndexDocument: 'index.html'
     });
 
     const distribution = new aws_cloudfront.Distribution(

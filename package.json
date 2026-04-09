@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "init": "cd front && npm i && cd ../cdk && npm i",
-    "front:start": "cd front && ng serve",
-    "front:build": "cd front && ng build --configuration production",
-    "cdk:synth": "cd cdk && cdk synth",
-    "cdk:deploy": "cd cdk && cdk deploy --require-approval never",
+    "front:start": "cd front && npm start serve",
+    "front:build": "cd front && npm run build",
+    "cdk:synth": "cd cdk && npm run synth",
+    "cdk:deploy": "cd cdk && npm run deploy",
     "deploy": "npm run front:build && npm run cdk:deploy",
-    "destroy": "cd cdk && cdk destroy"
+    "destroy": "cd cdk && npm run destroy"
   }
 }
