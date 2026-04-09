@@ -24,6 +24,5 @@ Follow the steps:
 ## Task 2. Deployment Links
 - **CloudFront URL:** [d1olajyhxnuft3.cloudfront.net](d1olajyhxnuft3.cloudfront.net)
 - **S3 Website URL:** [http://webstack-webdeploymentconstructfrontappbucket61eff-vtdex4wd6dod.s3-website.eu-north-1.amazonaws.com/](http://webstack-webdeploymentconstructfrontappbucket61eff-vtdex4wd6dod.s3-website.eu-north-1.amazonaws.com/)
-CloudFront link: d1olajyhxnuft3.cloudfront.net
-S3 web-site link: 
+
 
