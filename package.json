@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "init": "cd front && npm i && cd ../cdk && npm i",
-    "front:start": "cd front && npm start serve",
+    "front:start": "cd front && npm run start",
+    "front:start:production": "cd front && npm run front:start:production",
     "front:build": "cd front && npm run build",
     "cdk:synth": "cd cdk && npm run synth",
     "cdk:deploy": "cd cdk && npm run deploy",
