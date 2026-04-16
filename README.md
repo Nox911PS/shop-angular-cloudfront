@@ -22,7 +22,7 @@ Follow the steps:
 - npm run deploy
 
 ## Task 2. Deployment Links
-- **CloudFront URL:** [https://d1olajyhxnuft3.cloudfront.net](https://d1olajyhxnuft3.cloudfront.net)
+- **CloudFront URL:** [https://d3vj1oh9kguek8.cloudfront.net](https://d3vj1oh9kguek8.cloudfront.net)
 - **S3 Website URL:** [http://webstack-webdeploymentconstructfrontappbucket61eff-vtdex4wd6dod.s3-website.eu-north-1.amazonaws.com/](http://webstack-webdeploymentconstructfrontappbucket61eff-vtdex4wd6dod.s3-website.eu-north-1.amazonaws.com/)
 
 
