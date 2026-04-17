@@ -1,10 +1,7 @@
 # Shop Angular Cloudfront
 
 Angular version: ~17.
-
-Repo maintainers:
-
-- [Sergey Gultyayev](https://github.com/gultyayev)
+AWS-СDK version: ~2.1
 
 ## The purpose
 
@@ -14,12 +11,6 @@ The repository was created to have an Angular version of e-shop for EPAM NodeJS 
 
 All the necessary API endpoints are in the environments files `environment.ts` (for dev builds). Also it contains feature flags to enable/disable endpoints invocations from within the app so to ensure that you don't get errors for not implemented API endpoints.
 
-## Contribution
-
-Create an issue with the detailed description of the improvement/issue.
-
-If you would like to help implementing some feature, you should ask the maintainers for approval so to ensure that the feature is desired in the repository and no efforts go wasted.
-
 ## Get up and running
 
 Prerequisites: NodeJS LTS v18.x and higher
@@ -27,27 +18,11 @@ Prerequisites: NodeJS LTS v18.x and higher
 Follow the steps:
 
 - git clone
-- npm i
-- ng serve
+- npm run init
+- npm run deploy
 
-## Troubleshooting
+## Task 2. Deployment Links
+- **CloudFront URL:** [https://d3vj1oh9kguek8.cloudfront.net](https://d3vj1oh9kguek8.cloudfront.net)
+- **S3 Website URL:** [http://webstack-webdeploymentconstructfrontappbucket61eff-ck83slq4fazn.s3-website.eu-north-1.amazonaws.com](http://webstack-webdeploymentconstructfrontappbucket61eff-ck83slq4fazn.s3-website.eu-north-1.amazonaws.com)
 
-### Cannot commit
 
-Most likely you are getting a message
-
-> **Commit failed with error**
->
-> ...
->
-> ✖ subject may not be empty [subject-empty]
->
-> ✖ type may not be empty [type-empty]
->
-> ✖ found 2 problems, 0 warnings
->
-> ⓘ Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
->
-> husky - commit-msg script failed (code 1)
-
-To fix it you either need to follow conventional commit messages rules, or remove `.husky/pre-commit` file which enables the aforementioned rule.
