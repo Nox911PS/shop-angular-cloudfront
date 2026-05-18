@@ -16,7 +16,7 @@ import {
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 import { filter } from 'rxjs';
-import { finalize } from 'rxjs/operators';
+import {finalize} from 'rxjs/operators';
 
 import { Product } from '../../products/product.interface';
 import { ProductsService } from '../../products/products.service';
